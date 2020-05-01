@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/add_record_page"
+    android:orientation="vertical">
+    >
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/table"
+    android:layout_gravity="center"
+    android:layout_marginTop="16dp"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:rowCount="5">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:text="choose account type"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:entries="@array/spingarr"
+
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:text="choose income or expenses"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:entries="@array/accounttype"
+
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:text="amount of money"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:layout_columnSpan="1"
+
+        android:layout_gravity="fill"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:text="choose date"
+        />
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:startYear="2017"
+        android:endYear="2020"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:layout_columnSpan="1"
+
+        android:layout_gravity="fill"
+        android:id="@+id/confirm"
+        android:text="confirm"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:id="@+id/cancelaccount"
+        android:text="cancel"
+        />
+
+
+</GridLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>meals</item>
+        <item>shopping</item>
+        <item>commodity</item>
+        <item>transportation</item>
+        <item>travelling</item>
+        <item>study</item>
+        <item>medical</item>
+        <item>donate</item>
+        <item>salary</item>
+        <item>other-income</item>
+    </string-array>
+
+    <string-array name="accounttype">
+        <item>expense</item>
+        <item>income</item>
+            </string-array>
+
+
+</resources>

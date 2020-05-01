@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/testarea"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/add_record_event_button"
+            android:text="add account"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center">
+        </Button>
+
+        <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/account_list_order_by_event"
+            android:layout_gravity="start"
+            android:divider="#33333333"
+            android:dividerHeight="2dp"
+            android:scrollbars="vertical">
+        </ListView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

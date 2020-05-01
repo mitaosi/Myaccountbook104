@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".mainpage">
+
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/mainbackground2">
+
+        <!-- the first row in the mainpage( 2 button and 1 textview)   start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/setting2"
+        android:id="@+id/opensidebar"
+        android:layout_weight="1">
+    </Button>
+   <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id = "@+id/mainpagetitle"
+        android:gravity="center"
+        android:text=""
+       android:layout_weight="1"
+        >
+    </TextView>
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:id="@+id/analyze"
+        android:background="@drawable/analyze"
+        android:layout_weight="1"
+        android:layout_gravity="end">
+    </Button>
+    </LinearLayout>
+        <!-- the first row in the mainpage( 2 button and 1 textview)  end-->
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+    </LinearLayout>
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/left_drawer"
+        android:descendantFocusability="afterDescendants"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#33333333"
+        android:dividerHeight="0dp"
+        android:background="#ffeeeeee"
+        android:scrollbars="none"/>
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
